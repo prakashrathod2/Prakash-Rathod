@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prakash Rathod | Graphic Designer & Video Editor</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Minimal inline styles for the gallery section so it appears without additional CSS changes */
+  .portfolio-gallery{max-width:980px;margin:28px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .portfolio-card{border:1px solid #eee;padding:12px;border-radius:8px;background:#fff}
+  .portfolio-card img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+  .portfolio-card video{width:100%;border-radius:6px}
+  .gallery-head{max-width:980px;margin:24px auto;padding:0 12px}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -27,7 +35,7 @@
 
 <section id="about" class="section split">
   <div><p class="eyebrow">ABOUT ME</p><h2>Ideas into <span>impactful visuals.</span></h2></div>
-  <div><p>I'm a creative designer and video editor focused on turning ideas into visual experiences. From brand identity and social media design to engaging video edits and motion graphics, I combine creativity with clean, purposeful execution.</p></div>
+  <div><p>I'm a creative designer and video editor focused on turning ideas into visual experiences. From brand identity and social media design to engaging video edits and motion graphics, I combine craft and strategy to deliver results.</p></div>
 </section>
 
 <section id="work" class="section">
@@ -39,15 +47,64 @@
   </div>
 </section>
 
+<section id="portfolio" class="section">
+  <div class="gallery-head">
+    <p class="eyebrow">PORTFOLIO GALLERY</p>
+    <h2>Selected <span>images & video</span></h2>
+    <p class="lead">A short showcase of posters, ads and an edited video stored in this repository.</p>
+  </div>
+  <div class="portfolio-gallery">
+    <div class="portfolio-card">
+      <h4>Chaava Poster</h4>
+      <img src="./chaava-poster.jpg" alt="Chaava poster">
+      <div class="meta">chaava-poster.jpg</div>
+    </div>
+
+    <div class="portfolio-card">
+      <h4>Consistency</h4>
+      <img src="./consistency.jpg" alt="Consistency">
+      <div class="meta">consistency.jpg</div>
+    </div>
+
+    <div class="portfolio-card">
+      <h4>Independence Day</h4>
+      <img src="./independence-day.jpg" alt="Independence Day">
+      <div class="meta">independence-day.jpg</div>
+    </div>
+
+    <div class="portfolio-card">
+      <h4>John Wick Poster</h4>
+      <img src="./john-wick-poster.jpg" alt="John Wick poster">
+      <div class="meta">john-wick-poster.jpg</div>
+    </div>
+
+    <div class="portfolio-card">
+      <h4>Sprite Ad</h4>
+      <img src="./sprite-ad.jpg" alt="Sprite ad">
+      <div class="meta">sprite-ad.jpg</div>
+    </div>
+
+    <div class="portfolio-card">
+      <h4>Video Edit (MP4)</h4>
+      <video controls poster="./chaava-poster.jpg">
+        <source src="./video-edit-01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="meta">video-edit-01.mp4</div>
+    </div>
+  </div>
+</section>
+
 <section class="section skills-preview">
   <div class="section-head"><div><p class="eyebrow">EXPERTISE</p><h2>My <span>skills.</span></h2></div><a href="skills.html">View all skills →</a></div>
-  <div class="skill-pills"><a href="skill-photoshop.html">Photoshop</a><a href="skill-illustrator.html">Illustrator</a><a href="skill-premiere.html">Premiere Pro</a><a href="skill-after-effects.html">After Effects</a><a href="skill-davinci.html">DaVinci Resolve</a><a href="skill-branding.html">Brand Identity</a><a href="skill-social.html">Social Media Design</a><a href="skill-motion.html">Motion Graphics</a></div>
+  <div class="skill-pills"><a href="skill-photoshop.html">Photoshop</a><a href="skill-illustrator.html">Illustrator</a><a href="skill-premiere.html">Premiere Pro</a><a href="skill-after-effects.html">After Effects</a></div>
 </section>
 
 <section id="contact" class="contact section">
   <p class="eyebrow">LET'S CREATE</p><h2>Have an idea?<br><span>Let's make it happen.</span></h2>
   <div class="contact-links"><a href="tel:9978761164">📞 9978761164</a><a href="mailto:prakashrathod2809@gmail.com">✉ prakashrathod2809@gmail.com</a></div>
 </section>
+
 </main>
 <footer>© 2026 Prakash Rathod — Graphic Designer & Video Editor</footer>
 <script src="script.js"></script>
